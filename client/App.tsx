@@ -1,16 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { StatusBar } from 'react-native'
 import { NativeBaseProvider } from 'native-base'
-import SplashScreen from 'react-native-splash-screen'
 
+import { colors } from '@/constants/colors'
 import MainNavigator from '@/navigations/MainNavigator'
 
 const App = () => {
-  useEffect(() => {
-    SplashScreen.hide()
-  }, [])
-
   return (
     <NativeBaseProvider>
+      <StatusBar backgroundColor={colors.red} barStyle="light-content" />
       <MainNavigator />
     </NativeBaseProvider>
   )
