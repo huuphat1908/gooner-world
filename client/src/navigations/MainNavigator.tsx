@@ -10,7 +10,7 @@ const MainNavigator = () => {
 
   return (
     <NavigationContainer onReady={() => RNBootSplash.hide({ fade: true })}>
-      {!isLoggedIn ? <AuthNavigator /> : <AppNavigator />}
+      {isLoggedIn ? <AuthNavigator /> : <AppNavigator />}
     </NavigationContainer>
   )
 }
