@@ -1,6 +1,6 @@
-import { LOGIN, REGISTER } from '@/constants/routes'
+import { routes } from '@/constants'
 
 export type AuthNavigatorParamList = {
-  [LOGIN]: undefined
-  [REGISTER]: undefined
+  [routes.LOGIN]: undefined
+  [routes.REGISTER]: undefined
 }

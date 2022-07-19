@@ -1,6 +1,6 @@
-import { HOME, PROFILE } from '@/constants/routes'
+import { routes } from '@/constants'
 
 export type AppNavigatorParamList = {
-  [HOME]: undefined
-  [PROFILE]: undefined
+  [routes.HOME]: undefined
+  [routes.PROFILE]: undefined
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import { AuthNavigatorParamList } from '@/navigations/AuthNavigator/AuthNavigatorParamList'
-import { LOGIN, REGISTER } from '@/constants/routes'
+import { routes } from '@/constants'
 import { Login, Register } from '@/screens'
 
 const AuthStack = createStackNavigator<AuthNavigatorParamList>()
@@ -14,8 +14,8 @@ const AuthNavigator = () => {
         headerShown: false,
       }}
     >
-      <AuthStack.Screen name={LOGIN} component={Login} />
-      <AuthStack.Screen name={REGISTER} component={Register} />
+      <AuthStack.Screen name={routes.LOGIN} component={Login} />
+      <AuthStack.Screen name={routes.REGISTER} component={Register} />
     </AuthStack.Navigator>
   )
 }

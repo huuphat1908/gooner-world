@@ -1,5 +1,8 @@
-export const LOGIN = 'Login'
-export const REGISTER = 'Register'
+const enum routes {
+  LOGIN = 'Login',
+  REGISTER = 'Register',
+  HOME = 'Home',
+  PROFILE = 'Profile',
+}
 
-export const HOME = 'Home'
-export const PROFILE = 'Profile'
+export default routes
